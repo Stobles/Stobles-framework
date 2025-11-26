@@ -1,0 +1,20 @@
+{
+  "name": "stobles-framework-project",
+  "version": "1.0.0",
+  "description": "My fancy framework",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/runtime"
+  ],
+  "scripts": {
+    "serve:examples": "npx http-server . -o ./examples/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/estree": "^1.0.7",
+    "@types/node": "^22.14.1"
+  }
+}

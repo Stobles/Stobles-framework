@@ -1,0 +1,36 @@
+{
+  "include": ["./**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "incremental": true,
+    "composite": true,
+
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+
+    "types": ["@types/estree"],
+
+    /* Modules */
+    "module": "ESNext",
+    "rootDir": "./",
+    "moduleResolution": "bundler",
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+
+    "outDir": "./",
+    "downlevelIteration": true,
+
+    /* Interop Constraints */
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "noPropertyAccessFromIndexSignature": false,
+
+    "skipLibCheck": true
+  }
+}

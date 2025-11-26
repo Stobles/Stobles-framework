@@ -1,0 +1,33 @@
+{
+  "name": "stobles-framework",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "runtime package of my framework",
+  "main": "dist/stobles-framework.js",
+  "files": [
+    "dist/stobles-framework.js"
+  ],
+  "scripts": {
+    "prepack": "npm run build",
+    "build": "npx rollup -c rollup.config.ts --bundleConfigAsCjs",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.2",
+    "eslint": "^9.25.0",
+    "jiti": "^2.4.2",
+    "jsdom": "^26.1.0",
+    "rollup": "^4.40.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-filesize": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "vitest": "^3.1.1"
+  }
+}
